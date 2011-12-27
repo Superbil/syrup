@@ -2,7 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <!-- Shared settings -->
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -10,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string>Syrup</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.openvanilla.inputmethod.syrup</string>
+	<string>org.sharpstudio.inputmethod.liu</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -23,28 +22,28 @@
 	<string>SYRP</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>LSMinimumSystemVersion</key>
-	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
-	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
-	
-	<!-- Additional shared settings -->
-	<key>LSBackgroundOnly</key>
-	<string>0</string>
-	<key>LSHasLocalizedDisplayName</key>
-	<true/>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright (c) 2010-2011 Lukhnos D. Liu</string>
-	
-	<!-- Input method-specific settings, see IMKServer Class Reference -->
 	<key>InputMethodConnectionName</key>
 	<string>${INPUT_METHOD_CONNECTION_NAME}</string>
 	<key>InputMethodServerControllerClass</key>
 	<string>${INPUT_METHOD_SERVER_CONTROLLER_CLASS}</string>
 	<key>InputMethodServerDelegateClass</key>
 	<string>${INPUT_METHOD_SERVER_CONTROLLER_CLASS}</string>
+	<key>LSBackgroundOnly</key>
+	<string>0</string>
+	<key>LSHasLocalizedDisplayName</key>
+	<true/>
+	<key>LSMinimumSystemVersion</key>
+	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright (c) 2010-2011 Lukhnos D. Liu</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>TISInputSourceID</key>
+	<string>org.sharpstudio.inputmethod.liu</string>
+	<key>TISIntendedLanguage</key>
+	<string>zh-Hant</string>
 	<key>tsInputMethodCharacterRepertoireKey</key>
 	<array>
 		<string>Hant</string>
@@ -52,11 +51,5 @@
 	</array>
 	<key>tsInputMethodIconFileKey</key>
 	<string>SyrupForTIS.icns</string>
-
-        <!-- Used by HIToolbox, see HIToolbox Release Notes for Mac OS X 10.5 -->
-	<key>TISInputSourceID</key>
-	<string>org.openvanilla.inputmethod.syrup</string>
-	<key>TISIntendedLanguage</key>
-	<string>zh-Hant</string>
 </dict>
 </plist>

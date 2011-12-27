@@ -28,6 +28,8 @@
 #import <Cocoa/Cocoa.h>
 #import "OVInputSourceHelper.h"
 
+#define CONNECTION_NAME "org.sharpstudio.inputmethod.liu"
+
 int main(int argc, char *argv[])
 {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
@@ -78,7 +80,7 @@ int main(int argc, char *argv[])
         return -1;
     }
     
-    NSString *connectionName = [NSString stringWithUTF8String:INPUT_METHOD_CONNECTION_NAME];
+    NSString *connectionName = [NSString stringWithUTF8String:CONNECTION_NAME];
     if (!connectionName) {
         NSLog(@"Fatal error: InputMethodConnectionName key not defined in Info.plist.");
         [pool drain];        
